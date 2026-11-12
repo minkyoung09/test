@@ -1,4 +1,4 @@
-# DisputeLess
+# DisputeLess ㅣ fewer disputes for PayPal sellers.
 
 **Stop disputes before they start.**
 
@@ -8,6 +8,8 @@
 >
 [🚀 Live Demo](https://disputeless.onrender.com/demo/seller-dashboard) ·
 [🎬 Demo Video](https://youtu.be/cGdfF0rBP98?si=MAMs87csK5_Xo9w2) 
+
+<img width="931" height="563" alt="스크린샷 2026-11-13 오전 12 37 39" src="https://github.com/user-attachments/assets/5bfbec7d-07df-4f57-bffb-d54522771254" />
 
 ---
 
@@ -27,6 +29,9 @@ For independent merchants and small businesses, a single *Item Not Received* com
 
 Unlike a dispute dashboard that stops at tracking cases, DisputeLess connects **diagnosis → resolution → learning → prevention**. It gives merchants actionable numbers—not just another alert—and keeps sellers in control of consequential actions.
 
+<img width="1536" height="867" alt="스크린샷 2026-11-13 오전 1 24 29" src="https://github.com/user-attachments/assets/74d3b1f8-7652-4cd7-a693-769f3bff18a7" />
+
+
 ---
 
 ## 3. Our solution
@@ -35,7 +40,7 @@ Unlike a dispute dashboard that stops at tracking cases, DisputeLess connects **
 
 **From broad dispute codes to clear operational causes and quantified choices.**
 
-### 1.1 Go beyond reason codes: 16 operational causes
+### 💡 1.1 Go beyond reason codes: 16 operational causes
 
 A PayPal dispute reason describes **what the buyer is claiming**. That alone does not establish **why the problem happened**. DisputeLess uses the reason, buyer messages, order history, and shipping signals to classify a case into **6 groups and 16 more specific causes**:
 
@@ -52,7 +57,7 @@ AI proposes a subtype **with supporting evidence and a confidence level**. Low-c
 
 **Why this matters:** A customs hold calls for a customs-information request, not the same reply as a lost parcel. More precise causes lead to better choices today—and better preventive changes tomorrow.
 
-### 1.2 For an open dispute, how do we separate high-risk cases from low-risk ones?
+### 💡 1.2 For an open dispute, how do we separate high-risk cases from low-risk ones?
 
 **Merchant question:** *Which cases need attention first—and what could each response cost?*
 
@@ -77,17 +82,28 @@ Expected cost = Σ[P(outcome) × cost(outcome)]
 
 *Demo reference:* In the customs-delay case (**order #1042, $72, subtype A2**), the illustrative model scores no response at **89%**, a targeted customs-information reply at **8%** with approximately **$15** in expected cost, and an immediate refund at **2%** with approximately **$72** in cost. These are demo-model outputs, not measured real-world success rates.
 
+
 ### ✅  Solution 2 — Turn insights into a better resolution
 
 **Use the entire case history—not just the last message—to choose a credible next step.**
 
-### 2.1 Negotiate in the buyer's language, with full transaction context
+### 💡 2.1 Negotiate in the buyer's language, with full transaction context
 
 PayPal connects buyers and sellers across countries, languages, shipping networks, and customs requirements. Simply translating a sentence is not enough when the solution depends on the buyer's location, the parcel's status, or missing import information.
 
 DisputeLess uses AI to **interpret the buyer's concern, match it to transaction and shipping evidence, and propose a practical response in the buyer's language**. Sellers can review alternative actions alongside their estimated risk and cost. This shortens the path from *“What does the buyer mean?”* to *“What can we do about it?”*
 
-### 2.2 Keep the merchant in control
+<img width="589" height="576" alt="스크린샷 2026-11-13 오전 1 40 31" src="https://github.com/user-attachments/assets/67c4d93d-1cf7-47a6-81e2-e30db1082dfa" />
+
+> Repeated buyer–seller exchanges have created frustration on both sides, with an **89% dispute risk**. DisputeLess provides an at-a-glance view of the case history, status, and risk level.
+
+<img width="589" height="500" alt="스크린샷 2026-11-13 오전 1 34 07" src="https://github.com/user-attachments/assets/53fa5e96-3e1c-4c41-b191-9f50af753639" />
+
+> AI Respond now: the reply is drafted in the buyer’s language and checked line by line. Dispute risk drops from 89% to 8%
+
+
+
+### 💡 2.2 Keep the merchant in control
 
 Before a response or eligible PayPal action is submitted, guardrails check dates, amounts, and promises against available case evidence. **Money-moving actions require explicit seller approval**. The AI helps the merchant decide; it does not make unapproved financial commitments.
 
@@ -95,13 +111,13 @@ Before a response or eligible PayPal action is submitted, guardrails check dates
 
 **Test the financial exposure of planned sales before committing to a listing.**
 
-### 3.1 Before listing: how can a seller know what future disputes might cost?
+### 💡 3.1 Before listing: how can a seller know what future disputes might cost?
 
 New sellers and small businesses want to give shoppers the clearest, most accurate product information they can: sizing, materials, delivery windows, customs requirements, and return terms. But they rarely know **which missing detail is most likely to trigger a complaint—or how much that omission could cost across an entire batch of orders**.
 
 A listing that looks good for one buyer can create repeated issues when **200 units** are sold. Before publishing, the seller needs a way to convert gaps in size guidance, product photos, shipping estimates, and customs instructions into **a forward-looking estimate of dispute exposure**. By entering a **planned sales quantity**, the merchant can see how seemingly minor gaps scale into potential dispute counts and financial exposure. That makes prevention tangible **before inventory, marketing spend, and customer expectations are committed**.
 
-#### 3.2 Make risk visible: frequency × severity, 500 simulations, and one dot per sale
+####💡 3.2 Make risk visible: frequency × severity, 500 simulations, and one dot per sale
 
 DisputeLess separates **how often** a dispute cause may occur from **how much** a resulting case may cost:
 
@@ -109,11 +125,18 @@ DisputeLess separates **how often** a dispute cause may occur from **how much** 
 Expected loss by cause ≈ planned units × incident probability × average loss per incident
 ```
 
+<img width="765" height="678" alt="스크린샷 2026-11-13 오전 1 44 16" src="https://github.com/user-attachments/assets/24e2b46c-83af-403a-ac18-e0febf93697a" />
+
+
+> Visualization. A risk curve across the case history shows how trust broke down. In the rehearsal, one dot = one planned sale, with disputes colored in, so a first-time seller sees the scale at a glance. Risk (%) and cost ($) always appear together, and red is used only for high risk.
+
 The listing rehearsal runs a **500-iteration seeded Monte Carlo simulation**, estimating dispute counts and loss distributions for a planned sales volume. It then reruns the scenario with proposed listing improvements under comparable random conditions.
+
+<img width="1474" height="528" alt="스크린샷 2026-11-13 오전 1 49 46" src="https://github.com/user-attachments/assets/1deeb176-95fc-42b7-96ff-fdbe1be08704" />
 
 **A visual explanation, not just a number:** The demo presents planned sales as a **dot matrix—one dot for one sale**. Dots representing modeled dispute counts are colored by cause, making the scale and mix of potential complaints immediately understandable. Applying suggested listing fixes updates the dot pattern and expected-loss figure side by side. The **500 simulation runs are the calculation engine**; the **dots visualize the planned units and modeled results**, not 500 individual simulation runs.
 
-**Why this approach?** A single “high/medium/low” label cannot distinguish common, low-cost issues from rare, expensive ones. **Frequency × severity** prioritizes improvements by economic exposure; simulation shows the range of possible outcomes rather than suggesting there is one certain future. A fixed seed makes before/after comparisons reproducible.
+** 🔎 Why this approach?** A single “high/medium/low” label cannot distinguish common, low-cost issues from rare, expensive ones. **Frequency × severity** prioritizes improvements by economic exposure; simulation shows the range of possible outcomes rather than suggesting there is one certain future. A fixed seed makes before/after comparisons reproducible.
 
 The classification framework covers **16 causes**, while the supplied listing rehearsal models **five** of them quantitatively: **A1, A2, B1, B2, and E1**. The demo uses `mulberry32`, seeded with `4242 + planned units`.
 
@@ -123,16 +146,8 @@ The classification framework covers **16 causes**, while the supplied listing re
 
 ## 4. End-to-end product flow
 
-```mermaid
-flowchart LR
-  A[PayPal transaction, dispute<br/>and tracking signals] --> B[AI-assisted analysis<br/>16 cause types]
-  B --> C[Risk and cost modeling<br/>compare responses]
-  C --> D[Multilingual negotiation<br/>seller-approved action]
-  D --> E[Outcome and cause feedback]
-  E --> F[Pre-listing rehearsal<br/>500 simulated sales periods]
-  F --> G[Improve listing<br/>recalculate and publish]
-  G -. prevention loop .-> A
-```
+<img width="1606" height="262" alt="스크린샷 2026-11-13 오전 1 50 38" src="https://github.com/user-attachments/assets/bb97dd78-caf2-4f77-a44d-6176563fa96a" />
+
 
 **AI understands the context and helps communicate. Transparent calculation engines provide the risk and cost estimates. Merchant approval governs financial execution.**
 
